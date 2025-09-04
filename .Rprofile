@@ -3,6 +3,12 @@ options(repos=c(CRAM="https://p3m.dev/cran/__linux__/focal/latest",RSPM="https:/
 setHook("rstudio.sessionInit", function(newSession) {
   if (newSession)
     message("Welcome to the hands-on part of the Workshop !")
+    message("")
+    message("Before getting started, please run")
+    message("")
+    message("  setup_project()")
+    message("")
+    message("in the R console.")
 }, action = "append")
 
 setup_project <- function() {
